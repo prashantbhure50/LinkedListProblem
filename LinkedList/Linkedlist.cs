@@ -89,5 +89,14 @@ namespace LinkedList
             Console.WriteLine(Total);
 
         }
+        internal Node DeleteFirst()
+        {
+            if(this.head == null)
+            {
+                return null;
+            }
+            this.head = this.head.next;
+            return this.head;
+        }
     }
 }

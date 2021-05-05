@@ -11,16 +11,18 @@ namespace LinkedList
         static void Main(string[] args)
         {
             Linkedlist list = new Linkedlist();
-            list.Add(70);
+            list.Add(10);
             //list.Add(30);
-            list.Add(56);
-            list.Add(66);
-            list.Add(76);
-            list.Add(86);
-
-            list.InsertAtPaticularPosition(3, 30);
+            list.Add(20);
+            list.Add(30);
+            list.Add(40);
+            list.Add(50);
+            Console.WriteLine("************");
+           // list.InsertAtPaticularPosition(3, 30);
             list.Display();
-            
+            list.DeleteFirst();
+            Console.WriteLine("************");
+            list.Display();
 
             Console.ReadKey();
 
