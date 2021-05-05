@@ -23,7 +23,9 @@ namespace LinkedList
             list.DeleteFirst();
             Console.WriteLine("************");
             list.Display();
-
+            list.DeleteLast();
+            Console.WriteLine("************");
+            list.Display();
             Console.ReadKey();
 
 
