@@ -26,6 +26,9 @@ namespace LinkedList
             list.DeleteLast();
             Console.WriteLine("************");
             list.Display();
+            list.SearchValueInList(30);
+            Console.WriteLine("************");
+            list.Display();
             Console.ReadKey();
 
 

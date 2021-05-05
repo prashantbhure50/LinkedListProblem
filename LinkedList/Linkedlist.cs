@@ -119,5 +119,18 @@ namespace LinkedList
 
 
         }
+        internal Node SearchValueInList(int value)
+        {
+            while (this.head != null)
+            {
+                if(this.head.data == value)
+                {
+                    return this.head;
+                    
+                }
+                this.head = this.head.next;
+            }
+            return null;
+        }
     }
 }
