@@ -132,5 +132,16 @@ namespace LinkedList
             }
             return null;
         }
-    }
+        internal void DeleteAtPaticularPosition(int data)
+        {
+            
+                Node temp = head, prev = null;
+                while (temp != null && temp.data != data)
+                {
+                    prev = temp;
+                    temp = temp.next;
+                }
+            prev.next = temp.next;
+
+        }    }
 }
